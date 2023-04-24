@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link type="text/css" rel="stylesheet" href="/Contact.css">
+</head>
+<body>
+
+<nav class="navbar">
+		<div class="navdiv">
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="Prices.html">Prices</a></li>
+  <li><a href="About.html">About</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  <button><a href="Login.php">Login</a></button>
+  <button><a href="Signup.php">Sign Up</a></button>
+</div>
+</nav>
+
+    <div class="contactMe">
+        <div class="title">
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="box">
+            <!-- Form -->
+            <div class="contact form">
+                <h3>Send a Message</h3>
+                <form action="/connect.php" method="POST">
+                    <div class="formBox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>First Name</span>
+                                <input type="text" placeholder="Enter First Name" name="firstName">
+                            </div>
+                            <div class="inputBox">
+                                <span>Last Name</span>
+                                <input type="text" placeholder="Enter Last Name" name="lastName">
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email</span>
+                                <input type="email" placeholder="Enter Email" name="email">
+                            </div>
+                            <div class="inputBox">
+                                <span>Phone Number</span>
+                                <input type="number" placeholder="Enter Phone Number" name="phoneNumber">
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Message</span>
+                                <textarea placeholder="Write your message here..." name="text"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <input type="submit" name="subimt" value="Send" class="btn btn-success">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- info Box -->
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="infoBox">
+                    <div>
+                        <span><ion-icon name="location"></ion-icon></span>
+                        <p>Aston, Pennsylvania <br>UNITED STATES</p>
+                    </div>
+                    <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="mailto:dimitrig1999@gmail.com">dimitrig1999@gmail.com</a>
+                    </div>
+                    <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="tel:6108000261">610-800-0261</a>
+                    </div>
+                    <!-- Social Media Link -->
+                    <ul class="sci">
+                        <li><a href="https://www.instagram.com/customdrawingz/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="https://www.linkedin.com/in/dimitri-greco/"><ion-icon name="logo-linkedin"></ion-icon></></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="contact map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24500.247680969263!2d-75.43964810372445!3d39.86234312523166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6e61aa3c0e0ab%3A0x67d73da5c9987a60!2sAston%2C%20PA!5e0!3m2!1sen!2sus!4v1677191244876!5m2!1sen!2sus" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    background: url('/images/wood-background.jpg');
+    background-position: 0 1000px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background: crimson;
+    font-family: calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+    li a {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+    }
+
+button {
+    background-color: black;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+}
+
+    button a {
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient( -225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100% );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 120px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+
+
+    .container .heading {
+        width: 50%;
+        padding-bottom: 50px;
+    }
+
+        .container .heading h3 {
+            font-size: 3em;
+            font-weight: bolder;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #222;
+        }
+
+            .container .heading h3 span {
+                font-weight: 100;
+            }
+
+    .container .box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+        .container .box .pics {
+            display: flex;
+            flex-direction: column;
+            width: 32.5%;
+        }
+
+            .container .box .pics img {
+                width: 100%;
+                padding-bottom: 15px;
+                border-radius: 5px;
+            }
+@media only screen and (max-width: 769px) {
+    .container .box {
+        flex-direction: column;
+    }
+
+        .container .box .pics {
+            width: 100%;
+        }
+}
+
+@media only screen and (max-width: 643px) {
+    .container .heading {
+        width: 100%;
+    }
+
+        .container .heading h3 {
+            font-size: 1em;
+        }
+}

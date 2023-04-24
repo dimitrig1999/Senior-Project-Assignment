@@ -1,0 +1,96 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+//stuff
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: url('/images/wood-background.jpg');
+    background-position: 0 1000px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background: crimson;
+    font-family: calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+    li a {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 25px;
+    }
+
+button {
+    background-color: black;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+}
+
+    button a {
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-size: 7rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 2rem;
+    -webkit-text-fill-color: steelblue;
+    -webkit-text-stroke-width: 2px;
+}
+
+h2 {
+    color: #000000;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 5rem;
+    margin-bottom: 5rem;
+}
+
+h5 {
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0 30rem;
+}
